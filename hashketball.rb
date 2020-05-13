@@ -180,18 +180,14 @@ def player_numbers(user_team_name)
   game_hash = game_hash()
   numbers = []
   game_hash.each do |k, team|
-    #binding.pry
     if team[:team_name] == user_team_name
       team[:players].each do |player|
-        #binding.pry
         numbers.push(player[:number])
       end
     end
   end
   numbers
 end
-
-player_numbers("Brooklyn Nets")
 
 # returns all stats for a given player
 def player_stats()
