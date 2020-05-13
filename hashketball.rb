@@ -245,6 +245,8 @@ def winning_team
       e[:points] += total_points
     end
     memo[:team[:team_name]] = total_points
+
+    memo
   end
   binding.pry
   most_points = 0
