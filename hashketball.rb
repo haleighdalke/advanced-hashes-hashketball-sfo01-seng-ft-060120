@@ -244,7 +244,7 @@ def winning_team
     team.each do |e|
       e[:points] += total_points
     end
-    memo[:team[:team_name]] = total_points
+    memo[:team[:team_name].to_sym] => total_points
 
     memo
   end
