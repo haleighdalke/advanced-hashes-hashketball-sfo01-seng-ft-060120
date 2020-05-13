@@ -242,7 +242,7 @@ def winning_team
   most_points = 0
   game_hash[:home].each do |k, team|
     team.each do |e|
-      
+
     end
   end
 
