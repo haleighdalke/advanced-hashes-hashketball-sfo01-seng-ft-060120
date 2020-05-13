@@ -189,6 +189,8 @@ def player_numbers(user_team_name)
   numbers
 end
 
+player_numbers("Brooklyn Nets")
+
 # returns all stats for a given player
 def player_stats()
 
