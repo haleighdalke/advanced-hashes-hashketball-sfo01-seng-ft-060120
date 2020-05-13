@@ -130,6 +130,7 @@ end
 
 # Write code here
 
+# knows the number of points scored by each player
 def num_points_scored(player)
   game_hash = game_hash()
   game_hash.each do |k, team|
@@ -141,4 +142,14 @@ def num_points_scored(player)
   end
 end
 
-num_points_scored("Bismack Biyombo")
+# knows the shoe size of each player
+def shoe_size(player)
+  game_hash = game_hash()
+  game_hash.each do |k, team|
+    team[:players].each do |e|
+      if e[:player_name] == player
+        return e[:shoe_size]
+      end
+    end
+  end
+end
