@@ -250,7 +250,9 @@ def winning_team
   most_points = 0
   most_points_team = ""
   new_stats.each do |k, v|
-    if new_stats[v] > 
+    if new_stats[v] > most_points
+      most_points = new_stats[v]
+      most_points_team = new_stats[k]
   end
 end
 
