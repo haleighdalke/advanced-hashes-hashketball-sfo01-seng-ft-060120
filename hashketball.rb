@@ -254,6 +254,7 @@ def winning_team
       most_points = new_stats[v]
       most_points_team = new_stats[k]
   end
+  most_points_team
 end
 
 # Which player has the longest name?
