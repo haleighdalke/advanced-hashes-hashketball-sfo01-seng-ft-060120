@@ -176,6 +176,7 @@ def team_names
   names
 end
 
+team_names
 # returns the player jersey numbers
 def player_numbers()
 
