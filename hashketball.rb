@@ -180,9 +180,9 @@ def player_numbers(user_team_name)
   game_hash = game_hash()
   numbers = []
   game_hash.each do |k, team|
-    team[:players].each do |e|
-      if e[:player_name] == player
-        return e[:number]
+    if team[:team_name] == user_team_name
+      team[:players].each do |player|
+        numbers.push(player[:jersey])
       end
     end
   end
