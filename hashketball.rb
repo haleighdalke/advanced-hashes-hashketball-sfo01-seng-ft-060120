@@ -247,9 +247,10 @@ def winning_team
     memo[:team[:team_name]] => total_points
   end
 
-  most_points = ""
+  most_points = 0
+  most_points_team = ""
   new_stats.each do |k, v|
-    
+    if new_stats[v] > 
   end
 end
 
