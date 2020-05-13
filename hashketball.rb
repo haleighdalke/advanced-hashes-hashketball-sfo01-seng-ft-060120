@@ -168,9 +168,11 @@ end
 # returns the team names (FAILED - 3)
 def team_names
   game_hash = game_hash()
-  game_hash.each do |element|
-    
+  names = []
+  game_hash.each do |k, team|
+    names.push(team[team_name])
   end
+  names
 end
 
 # returns the player jersey numbers
