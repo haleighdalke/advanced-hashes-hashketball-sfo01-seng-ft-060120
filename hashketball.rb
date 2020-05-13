@@ -166,8 +166,8 @@ def team_colors(user_team_name)
 end
 
 # returns the team names (FAILED - 3)
-def team_names()
-  
+def team_names
+  game_hash = game_hash()
 end
 
 # returns the player jersey numbers
