@@ -153,3 +153,29 @@ def shoe_size(player)
     end
   end
 end
+
+# knows the Brooklyn Nets colors are Black and White
+# knows the Charlotte Hornets colors are Turquoise and Purple
+def team_colors()
+
+end
+
+# returns the team names (FAILED - 3)
+def team_names()
+
+end
+
+# returns the player jersey numbers
+def player_numbers()
+
+end
+
+# returns all stats for a given player
+def player_stats()
+
+end
+
+# returns the number of rebounds of the player with the biggest shoe size
+def big_shoe_rebounds()
+
+end
