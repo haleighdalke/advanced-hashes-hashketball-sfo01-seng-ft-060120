@@ -245,7 +245,7 @@ def winning_team
       
     end
   end
-  
+
 end
 
 winning_team
