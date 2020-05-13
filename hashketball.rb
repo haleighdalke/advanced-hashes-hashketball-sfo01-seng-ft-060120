@@ -180,10 +180,10 @@ def player_numbers(user_team_name)
   game_hash = game_hash()
   numbers = []
   game_hash.each do |k, team|
-    binding.pry
+    #binding.pry
     if team[:team_name] == user_team_name
       team[:players].each do |player|
-        binding.pry
+        #binding.pry
         numbers.push(player[:number])
       end
     end
