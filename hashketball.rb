@@ -184,7 +184,7 @@ def player_numbers(user_team_name)
     if team[:team_name] == user_team_name
       team[:players].each do |player|
         binding.pry
-        numbers.push(player[:jersey])
+        numbers.push(player[:number])
       end
     end
   end
