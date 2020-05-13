@@ -143,4 +143,3 @@ def num_points_scored(player)
   end
   "Player not present."
 end
-
