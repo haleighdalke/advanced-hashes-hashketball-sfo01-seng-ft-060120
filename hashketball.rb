@@ -224,7 +224,7 @@ def most_points_scored
 
 end
 
-# Which team has the most points? 
+# Which team has the most points?
 def winning_team
 
 end
