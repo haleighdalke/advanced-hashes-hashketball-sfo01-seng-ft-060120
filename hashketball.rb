@@ -226,7 +226,10 @@ end
 
 # Which team has the most points?
 def winning_team
-
+  game_hash = game_hash()
+  game_hash.each do |k, team|
+    
+  end
 end
 
 # Which player has the longest name?
