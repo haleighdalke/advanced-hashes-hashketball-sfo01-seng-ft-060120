@@ -182,7 +182,7 @@ def player_numbers(player)
   game_hash.each do |k, team|
     team[:players].each do |e|
       if e[:player_name] == player
-        return e[:shoe]
+        return e[:number]
       end
     end
   end
