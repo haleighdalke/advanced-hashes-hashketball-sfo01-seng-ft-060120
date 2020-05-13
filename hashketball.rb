@@ -235,7 +235,7 @@ def player_with_longest_name
   longest_name = ""
   game_hash.each do |k, team|
     team[:players].each do |e|
-      if e[:shoe] > biggest_shoe_size
+      if e[:player_name].length > biggest_shoe_size
         biggest_shoe_size = e[:shoe]
         player_rebounds = e[:rebounds]
       end
