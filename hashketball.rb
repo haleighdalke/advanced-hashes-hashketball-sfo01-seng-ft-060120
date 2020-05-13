@@ -243,9 +243,11 @@ def winning_team
   home_team_points = game_hash[:home][:players].sum { |e| e[:points] }
   away_team_points = game_hash[:away][:players].sum { |e| e[:points] }
 
-  binding.pry
-
-  most_points
+  if home_team_points > away_team_points
+    return game_hash[:home][:team_name]
+  else
+    return game_hash[:away][:team_name]
+  end
 end
 
 winning_team
