@@ -201,6 +201,7 @@ def player_stats(player)
     end
   end
 end
+player_stats("Bismack Biyombo")
 
 # returns the number of rebounds of the player with the biggest shoe size
 def big_shoe_rebounds()
