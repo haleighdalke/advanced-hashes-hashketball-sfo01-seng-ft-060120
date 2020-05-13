@@ -239,7 +239,7 @@ end
 # Which team has the most points?
 def winning_team
   game_hash = game_hash()
-  new_ stats = game_hash.reduce({}) do |memo (k, team)|
+  new_ stats = game_hash.reduce({}) do |memo, (k, team)|
     total_points = 0
     team.each do |e|
       e[:points] += total_points
