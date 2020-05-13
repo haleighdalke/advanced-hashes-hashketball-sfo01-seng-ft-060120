@@ -183,6 +183,7 @@ def player_numbers(user_team_name)
     binding.pry
     if team[:team_name] == user_team_name
       team[:players].each do |player|
+        binding.pry
         numbers.push(player[:jersey])
       end
     end
