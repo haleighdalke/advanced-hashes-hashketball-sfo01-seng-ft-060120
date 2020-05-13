@@ -229,8 +229,9 @@ def winning_team
   game_hash = game_hash()
   new_stats = {}
   game_hash.reduce({}) do |memo (k, team)|
+    total_points = 0
     team.each do |e|
-      
+      e[:points] += total_points
     end
   end
 end
