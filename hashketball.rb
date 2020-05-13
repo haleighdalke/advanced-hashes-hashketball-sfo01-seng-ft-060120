@@ -232,7 +232,7 @@ def most_points_scored
       end
     end
   end
-  longest_name
+  player
 end
 
 # Which team has the most points?
