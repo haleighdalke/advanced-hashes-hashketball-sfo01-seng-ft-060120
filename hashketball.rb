@@ -237,17 +237,21 @@ end
 
 
 # Which team has the most points?
-# def winning_team
-#   game_hash = game_hash()
-#   new_ stats = game_hash.reduce({}) do |memo (k, team)|
-#     total_points = 0
-#     team.each do |e|
-#       e[:points] += total_points
-#     end
-#     memo[:team[:team_name]] => total_points
-#   end
-#   if new_stats[]
-# end
+def winning_team
+  game_hash = game_hash()
+  new_ stats = game_hash.reduce({}) do |memo (k, team)|
+    total_points = 0
+    team.each do |e|
+      e[:points] += total_points
+    end
+    memo[:team[:team_name]] => total_points
+  end
+
+  most_points = ""
+  new_stats.each do |k, v|
+    
+  end
+end
 
 # Which player has the longest name?
 def player_with_longest_name
