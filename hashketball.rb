@@ -227,6 +227,7 @@ end
 # Which team has the most points?
 def winning_team
   game_hash = game_hash()
+  new_stats = {}
   game_hash.each do |k, team|
     
   end
