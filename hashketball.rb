@@ -190,8 +190,15 @@ def player_numbers(user_team_name)
 end
 
 # returns all stats for a given player
-def player_stats()
-
+def player_stats(player)
+  game_hash = game_hash()
+  game_hash.each do |k, team|
+    team[:players].each do |e|
+      if e[:player_name] == player
+        return e[:shoe]
+      end
+    end
+  end
 end
 
 # returns the number of rebounds of the player with the biggest shoe size
