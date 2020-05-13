@@ -240,9 +240,9 @@ end
 def winning_team
   game_hash = game_hash()
   most_points = 0
-  home_team_points = game_hash[:home][:players].sum do |e|
-    e[:points]
-  end
+  home_team_points = game_hash[:home][:players].sum { |e| e[:points] }
+  away_team_points = game_hash[:away][:players].sum { |e| e[:points] }
+  
   binding.pry
 
   most_points
