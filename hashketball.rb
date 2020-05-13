@@ -228,8 +228,10 @@ end
 def winning_team
   game_hash = game_hash()
   new_stats = {}
-  game_hash.each do |k, team|
-    
+  game_hash.reduce({}) do |memo (k, team)|
+    team.each do |e|
+      
+    end
   end
 end
 
