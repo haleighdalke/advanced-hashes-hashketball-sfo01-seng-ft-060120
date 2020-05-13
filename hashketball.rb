@@ -173,6 +173,7 @@ def team_names
     binding.pry
     names.push(team[team_name])
   end
+  binding.pry
   names
 end
 
