@@ -256,3 +256,21 @@ def player_with_longest_name
   end
   longest_name
 end
+
+def long_name_steals_a_ton?
+  game_hash = game_hash()
+  name = player_with_longest_name
+
+  most_steals = 0
+  player = ""
+  game_hash.each do |k, team|
+    team[:players].each do |e|
+      if e[:points] > most_points
+        most_points = e[:points]
+        player = e[:player_name]
+      end
+    end
+  end
+  player
+
+end
