@@ -255,6 +255,7 @@ def winning_team
     if new_stats[v] > most_points
       most_points = new_stats[v]
       most_points_team = new_stats[k]
+    end
   end
   binding.binding.pry
   most_points_team
