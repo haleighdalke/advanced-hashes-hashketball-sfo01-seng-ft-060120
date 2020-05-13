@@ -238,9 +238,9 @@ end
 
 # Which team has the most points?
 # def winning_team
-# 
+#
 # end
-# 
+#
 # winning_team
 
 # Which player has the longest name?
