@@ -177,8 +177,15 @@ end
 
 team_names
 # returns the player jersey numbers
-def player_numbers()
-
+def player_numbers(player)
+  game_hash = game_hash()
+  game_hash.each do |k, team|
+    team[:players].each do |e|
+      if e[:player_name] == player
+        return e[:shoe]
+      end
+    end
+  end
 end
 
 # returns all stats for a given player
