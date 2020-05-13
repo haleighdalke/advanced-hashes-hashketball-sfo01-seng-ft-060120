@@ -246,7 +246,7 @@ def winning_team
     end
     memo[:team[:team_name]] => total_points
   end
-
+  binding.pry
   most_points = 0
   most_points_team = ""
   new_stats.each do |k, v|
@@ -254,6 +254,7 @@ def winning_team
       most_points = new_stats[v]
       most_points_team = new_stats[k]
   end
+  binding.binding.pry
   most_points_team
 end
 
