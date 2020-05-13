@@ -176,8 +176,9 @@ def team_names
 end
 
 # returns the player jersey numbers
-def player_numbers(player)
+def player_numbers(user_team_name)
   game_hash = game_hash()
+  numbers = []
   game_hash.each do |k, team|
     team[:players].each do |e|
       if e[:player_name] == player
