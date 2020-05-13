@@ -232,8 +232,11 @@ def most_points_scored
       end
     end
   end
+  binding.pry
   player
 end
+
+most_points_scored
 
 # Which team has the most points?
 def winning_team
