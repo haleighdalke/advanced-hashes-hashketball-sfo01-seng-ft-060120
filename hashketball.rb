@@ -170,10 +170,8 @@ def team_names
   game_hash = game_hash()
   names = []
   game_hash.each do |k, team|
-    #binding.pry
     names.push(team[:team_name])
   end
-#  binding.pry
   names
 end
 
