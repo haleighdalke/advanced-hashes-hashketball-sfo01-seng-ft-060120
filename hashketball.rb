@@ -240,8 +240,6 @@ def player_with_longest_name
       end
     end
   end
-  binding.pry
   longest_name
 end
 
-player_with_longest_name
